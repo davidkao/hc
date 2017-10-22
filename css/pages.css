@@ -34,7 +34,7 @@
 .page-title-sec{height:76px;position:relative;}
 .page-title-sec .page-title{display:inline-block;color:#27241c;font-size:24px;line-height:26px;font-weight:bold;vertical-align: middle;margin-top:20px;}
 .page-title-sec .page-title span{display:inline-block;vertical-align: middle;}
-.page-title-sec .page-title span img{width:30px;}
+.page-title-sec .page-title span img{width:30px;margin-right:10px;}
 .page-title-sec .page-title-visual{position:absolute;bottom:0;right:20px;}
 
 .page-tab-sec{
