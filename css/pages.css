@@ -11,6 +11,7 @@
   max-width: 680px;
   margin: 20px auto;
 }
+.white-popup.popup-wide{max-width:800px;}
 
 .nice-sel-wrap.nice-select{
 	background:#f9f7f3;font-size:14px;color:#333;height:40px;line-height:40px;font-weight:bold;border-radius: 30px;
@@ -101,3 +102,30 @@
 	position:relative;
 }
 .login-sec:before{content:'';height:10px;background:#5aaae2;position:absolute;top:0;left:0;width:100%;}
+
+.table{width:100%;overflow:hidden;}
+.table tr{}
+.table tr th{font-size:14px;line-height:16px;color:#333;font-weight:bold;height:50px;background:#fff;vertical-align: middle;text-align:center;padding:0 20px;border:1px solid #eeeeee;box-sizing: border-box;}
+.table tr td{background:#fff;padding:0 20px;border:1px solid #eeeeee;box-sizing: border-box;}
+
+.table.form-s-table tr td.con1{max-height:120px;}
+.table.form-s-table tr td.con1 .pic1{}
+.table.form-s-table tr td.con1 .pic1 img{width:90px;height:90px;display:block;}
+.table.form-s-table tr td.con1 .text1{max-width:380px;margin:0 15px;}
+.table.form-s-table tr td.con1 .tag1{max-width:100px;}
+
+.table-popup{width:100%;}
+.table-popup.table-popup-form tr{border-top:1px solid #dfe2e3;}
+.table-popup.table-popup-form tr:last-child{border-bottom:1px solid #dfe2e3;}
+.table-popup.table-popup-form tr th{background:#fafafa;height:46px;vertical-align:middle;padding:0 10px;}
+.table-popup.table-popup-form tr td{padding:15px 10px;min-height:30px;vertical-align: middle;}
+.table-popup.table-popup-form tr td.fs1{max-width:240px;}
+.table-popup.table-popup-form tr td.fsm1{max-width:180px;}
+
+.user-avatar{width:200px;height:240px;overflow:hidden;position:relative;float:left;}
+.user-avatar-n{width:calc(100% - 200px);height:240px;overflow:hidden;position:relative;float:left;}
+.user-avatar .bg{width:100%;height:240px;overflow:hidden;display:block;position:absolute;}
+.user-avatar .user-info{position:relative;z-index:1;width:100%;text-align:center;}
+.user-avatar .user-info .name{font-size:18px;font-weight:bold;line-height:22px;color:#fff;}
+.user-avatar .user-info .line{width:60%;height:1px;background:#5eace3;display:block;margin:25px auto;}
+.user-avatar .user-info .info{font-size:14px;line-height:16px;color:#ddd;margin-bottom:12px;}
