@@ -32,6 +32,7 @@ q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 .fltlft{float:left;}
 .fltrt{float:right;}
+.fltno{float:none !important;}
 .clear{clear:both;font-size:0;}
 .absolute{position:absolute;}
 .relative{position:relative;}

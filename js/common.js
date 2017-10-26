@@ -58,5 +58,16 @@ $(document).ready(function(){
 	});
 	
 	$('select').niceSelect();
+	
+	//body toggle
+	$('.body-detail').click(function(e) {
+	    e.preventDefault();
+		var $this = $(this).find('.toggle-con');
+		$(".toggle-con").not($this).hide();
+		
+	    $(this).find('.toggle-con').toggle("fade", 150);
+	});
+	
+	
 					   
 });
