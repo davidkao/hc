@@ -116,6 +116,7 @@
 .table.form-s-table tr td.con1 .tag1{max-width:100px;}
 .table.form-s-table .w-half{width:16px;height:16px;vertical-align:middle;margin-left:5px;}
 .table.form-s-table tr td.min20{min-width: 90px;vertical-align: middle;}
+.table.form-s-table tr td .phy-h-link{color:#1aafa6;text-decoration: underline;}
 
 
 .table-popup{width:100%;}
@@ -125,6 +126,7 @@
 .table-popup.table-popup-form tr td{padding:15px 10px;min-height:30px;vertical-align: middle;}
 .table-popup.table-popup-form tr td.fs1{max-width:240px;}
 .table-popup.table-popup-form tr td.fsm1{max-width:180px;}
+.table-popup.table-popup-form tr td.phy-h-td{width:120px;background:#fafafa;}
 .psn-table-pic a{width:80px;height:60px;display:block;overflow:hidden;}
 
 .user-avatar{width:200px;height:240px;overflow:hidden;position:relative;float:left;}
