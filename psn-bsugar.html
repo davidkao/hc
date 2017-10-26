@@ -29,8 +29,13 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/pages.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/jquery-labelauty.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="js/echarts.js"></script>
 	
 </head>
 
@@ -135,7 +140,7 @@
 			<div class="inner">
 
 				<div class="page-title-sec pd-h-20 mg-b-20">
-					<div><h2 class="page-title"><span><img src="images/page/ico-title-psn.png" alt="慢性疾病風險評估" /></span>血糖記錄</h2></div>
+					<div><h2 class="page-title"><span><img src="images/page/ico-title-psn.png" alt="血糖記錄" /></span>血糖記錄</h2></div>
 					<div class="page-title-visual" style="bottom:-22px;"><img src="images/page/psn-title-visual.png" alt="icon" /></div>
 				</div>
 
@@ -170,16 +175,264 @@
 					<a href="psn-sleeping.html" class="one-tab fltlft">睡眠品質或壓力記錄</a>
 					<!--one tab-->
 					
-					<!--one tab-->
-					<a href="psn-med.html" class="one-tab fltlft">用藥記錄</a>
-					<!--one tab-->
 					
 				</div>
 				<!--tab sec-->
 
-				<div class="clearfix">
+				<div class="mg-h-20">
 
-					<img src="images/common/user-tmp2.jpg" alt="" class="mg-l-20" />
+					<div class="bg-white bg-sha mg-b-40 grid100">
+						<div class="user-sec-inner pd-20 relative">
+						
+							<div class="mg-l-5 mg-t-5 mg-b-20">
+								<h3 class="inlineblock text-16 bold color-gray-333 lh-30">血糖量表折線圖</h3>
+								<div class="psn-charts-tab inlineblock mg-l-30">
+									<span class="text-13  color-gray-333 lh-30">最近：</span>
+									<a href="#" class="text-13  color-gray-333 lh-30 active" hov="0.7">一個月</a>
+									<a href="#" class="text-13  color-gray-333 lh-30" hov="0.7">三個月</a>
+									<a href="#" class="text-13  color-gray-333 lh-30" hov="0.7">半年</a>
+									<a href="#" class="text-13  color-gray-333 lh-30" hov="0.7">一年</a>
+								</div>
+								
+							</div>
+						
+							<!-- 血糖記錄 -->
+							<div id="bsugar" class="block">
+								<div id="bsugar_charts" class="charts" style="height:300px;"></div>
+
+							</div>
+							<!-- 血糖記錄 -->
+							
+							<!-- 血糖記錄 js-->
+							<script>
+								var bsugar_charts = echarts.init(document.getElementById('bsugar_charts'));
+
+								var option = {
+									
+									textStyle:{
+										fontSize:13,
+										fontWeight:'bold'
+									},
+									tooltip: {},
+										legend: {
+											data:['飯前血糖值','飯後血糖值']
+										},
+
+									xAxis: {
+										// type: 'category',
+										// name: '日期',
+										// splitLine: {show: false},
+										data: ['2017-01-01', '2017-02-01', '2017-02-05'],
+									},
+									yAxis: {},
+									color:['#121281','#1aafa6','#1a3ff9','#5eace3'],
+									series: [
+										{
+											name: '飯前血糖值',
+											type: 'line',
+											data: [120, 80, 100]
+										},
+										{
+											name: '飯後血糖值',
+											type: 'line',
+											data: [110, 85, 60]
+										}
+									]
+								};
+								bsugar_charts.setOption(option);
+
+
+
+							</script>
+							<!-- 血糖記錄 js-->
+							
+						</div>
+					</div>
+					
+						
+					<div class="tright mg-b-30"><a href="#trpop-1" class="btn btn-m btn-lb inlineblock open-popup-link" hov="0.8">新增量表<i class="fa fa-plus mg-l-10" aria-hidden="true"></i></a></div>
+
+					<!--新增量表  Popup itself -->
+					<div id="trpop-1" class="white-popup mfp-hide popup-wide">
+
+						<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">新增日常血糖記錄</h3>
+
+						<div>
+							<table class="table-popup table-popup-form">
+
+								<tr>
+									<th colspan="2" class="tleft text-13 color-gray-333 lh-16 bold"><span class="color-red">＊</span>為必填項目</th>
+								</tr>
+
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>量測日期</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" class="datepicker" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">量測時間</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" value="" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>記錄類型</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<select class="nice-sel-wrap">
+											<option data-display="記錄類型">選擇類型</option>
+											<option value="01">飯前血糖值(mg/dl)</option>
+											<option value="02">飯後血糖值(mg/dl)</option>
+											<option value="03">糖化血色素(%)</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>記錄值</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="需為正整數" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">註記或說明</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><textarea type="text"></textarea></td>
+								</tr>
+
+
+						  </table>
+
+
+						  <div class="mg-t-30 tright">
+							  <button class="btn btn-m btn-lb inlineblock open-popup-link" hov="0.8">新增<i class="fa fa-plus mg-l-10" aria-hidden="true"></i></button>
+						  </div>
+
+						</div>
+					</div>
+					<!--新增量表  Popup itself -->
+						
+					<table class="table form-s-table bg-sha">
+
+						<tr>
+							<th>編號</th>
+							<th>量測時間</th>
+							<th>記錄類型</th>
+							<th>記錄值<img src="images/page/ico-warning.png" alt="warning" class="hastip w-half" title="飯前血糖建議低於100mg/dl, 飯後血糖則是低於120mg/dl, 糖化血色素 < 6%"></th>
+							<th>註記或說明</th>
+							<th>建檔日</th>
+							<th></th>
+							<th></th>
+						</tr>
+
+						<tr>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">1</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">飯前血糖值</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10 color-red">100<img src="images/page/ico-warning.png" alt="warning" class="hastip w-half" title="飯前血糖建議低於100mg/dl, 飯後血糖則是低於120mg/dl, 糖化血色素 < 6%"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08 07:19</td>
+							<td class="tcenter"><a href="#fs-table-1" class="open-popup-link btn btn-s btn-db btn-noshad inlineblock" hov="0.8">查看</a></td>
+							<td class="tcenter pd-v-10"><button class="btn btn-s btn-black btn-noshad inlineblock" hov="0.8">刪除</button></td>
+						</tr>
+						
+						<tr>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">1</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">飯前血糖值</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10 color-red">100<img src="images/page/ico-warning.png" alt="warning" class="hastip w-half" title="飯前血糖建議低於100mg/dl, 飯後血糖則是低於120mg/dl, 糖化血色素 < 6%"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08 07:19</td>
+							<td class="tcenter"><a href="#fs-table-1" class="open-popup-link btn btn-s btn-db btn-noshad inlineblock" hov="0.8">查看</a></td>
+							<td class="tcenter pd-v-10"><button class="btn btn-s btn-black btn-noshad inlineblock" hov="0.8">刪除</button></td>
+						</tr>
+						
+						<tr>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">1</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">飯前血糖值</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10 color-red">100<img src="images/page/ico-warning.png" alt="warning" class="hastip w-half" title="飯前血糖建議低於100mg/dl, 飯後血糖則是低於120mg/dl, 糖化血色素 < 6%"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08 07:19</td>
+							<td class="tcenter"><a href="#fs-table-1" class="open-popup-link btn btn-s btn-db btn-noshad inlineblock" hov="0.8">查看</a></td>
+							<td class="tcenter pd-v-10"><button class="btn btn-s btn-black btn-noshad inlineblock" hov="0.8">刪除</button></td>
+						</tr>
+						
+						<tr>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">1</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">飯前血糖值</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10 color-red">100<img src="images/page/ico-warning.png" alt="warning" class="hastip w-half" title="飯前血糖建議低於100mg/dl, 飯後血糖則是低於120mg/dl, 糖化血色素 < 6%"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10"></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08 07:19</td>
+							<td class="tcenter"><a href="#fs-table-1" class="open-popup-link btn btn-s btn-db btn-noshad inlineblock" hov="0.8">查看</a></td>
+							<td class="tcenter pd-v-10"><button class="btn btn-s btn-black btn-noshad inlineblock" hov="0.8">刪除</button></td>
+						</tr>
+
+					</table>
+					
+					
+
+
+					<!--量表內容 Popup itself  -->
+					<div id="fs-table-1" class="white-popup mfp-hide popup-wide">
+
+						<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">日常血糖記錄</h3>
+
+						<div>
+							<table class="table-popup table-popup-form">
+
+								<tr>
+									<th colspan="2" class="tleft text-13 color-gray-333 lh-16 bold"><span class="color-red">＊</span>為必填項目</th>
+								</tr>
+
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>量測日期</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" class="datepicker" value="2017-10-06" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">量測時間</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" value="10:30" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>記錄類型</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<select class="nice-sel-wrap">
+											<option data-display="記錄類型">選擇類型</option>
+											<option value="01" selected>飯前血糖值(mg/dl)</option>
+											<option value="02">飯後血糖值(mg/dl)</option>
+											<option value="03">糖化血色素(%)</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>記錄值</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="需為正整數" value="50" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">註記或說明</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><textarea type="text"></textarea></td>
+								</tr>
+
+
+						  </table>
+
+
+						  <div class="mg-t-30 tright">
+							  <button class="btn btn-m btn-lb inlineblock open-popup-link" hov="0.8">更新<i class="fa fa-plus mg-l-10" aria-hidden="true"></i></button>
+						  </div>
+
+						</div>
+					</div>
+					<!--量表內容 Popup itself -->
+					
+					<!--pages-->
+					<div class="pages mg-v-30 tright">
+						<a href="#" class="inlineblock text-13 color-gray-333">上一頁</a>
+						<a href="#" class="inlineblock text-13 color-gray-333 active">1</a>
+						<a href="#" class="inlineblock text-13 color-gray-333">下一頁</a>
+					</div>
+					<!--pages-->
 
 				</div>
 
@@ -220,11 +473,31 @@
 <!-- Get Google CDN's jQuery and jQuery UI with fallback to local -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.js"></script>
+<script src="js/jquery.blImageCenter.js"></script>
 <script src="js/jquery-labelauty.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.counterup.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.nice-select.js"></script>
+<script src="js/tooltipsy.min.js"></script>
 <script src="js/common.js"></script>
+
+<script>
+
+$('.hastip').tooltipsy();
+$( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+	
+$('.m-close').on( "click", function() {
+  $.magnificPopup.close();
+});
+	
+</script>
 
 </body>
 </html>

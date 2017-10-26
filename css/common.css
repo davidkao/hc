@@ -1,4 +1,13 @@
 @charset "utf-8";
+.tooltipsy{
+	padding: 15px 20px;
+	max-width: 220px;
+	color: #fff;
+	background-color: rgba(16,18,23,.9);
+	border-radius:5px;
+	line-height:16px;
+}
+.tag-s{height:30px;line-height:30px;padding:0 15px;font-size:14px;font-weight:bold;color:#fff;border-radius: 30px;}
 .bg-lb{background:#5aaae2;}
 .bg-db{background:#1a3ff9;}
 .bg-bg{background:#1aafa6;}
@@ -16,10 +25,10 @@
 	outline: none;
 }
 .btn-s{
-	height:42px;
-	line-height:42px;
-	font-size:15px;
-	padding:0 22px;
+	height:36px;
+	line-height:36px;
+	font-size:14px;
+	padding:0 18px;
 }
 .btn-m{
 	height:42px;
@@ -76,6 +85,8 @@
 .grid2{width:calc(50% - 40px);margin:0 20px;}
 .grid3-2{width:calc(66.666% - 40px);margin-left:20px;margin-right:20px;}
 .grid3-1{width:calc(33.333% - 40px);margin-left:20px;margin-right:20px;}
+.grid5-1{width:20%;}
+.grid100{width:100%;}
 .bg-sha{
 	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
@@ -91,6 +102,25 @@ input[type="text"],input[type="password"]{
 	color:#333;
 	font-size:14px;
 	border-radius: 25px;
+	border:1px solid #ececec;
+	background:#f9f7f3;
+	-webkit-box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,0.3);
+	outline: none;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+textarea{
+	padding:20px;
+	height:130px;
+	line-height:22px;
+	resize:none;
+	width:100%;
+	color:#333;
+	font-size:14px;
+	border-radius: 5px;
 	border:1px solid #ececec;
 	background:#f9f7f3;
 	-webkit-box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,0.3);

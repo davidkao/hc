@@ -105,14 +105,16 @@
 
 .table{width:100%;overflow:hidden;}
 .table tr{}
-.table tr th{font-size:14px;line-height:16px;color:#333;font-weight:bold;height:50px;background:#fff;vertical-align: middle;text-align:center;padding:0 20px;border:1px solid #eeeeee;box-sizing: border-box;}
-.table tr td{background:#fff;padding:0 20px;border:1px solid #eeeeee;box-sizing: border-box;}
+.table tr th{font-size:13px;line-height:16px;color:#333;font-weight:bold;height:50px;background:#fff;vertical-align: middle;text-align:center;padding:0 12px;border:1px solid #eeeeee;box-sizing: border-box;}
+.table tr td{background:#fff;padding:inherit 20px;border:1px solid #eeeeee;box-sizing: border-box;}
+.table tr:nth-child(odd) td{background:#f5f9fc;}
 
 .table.form-s-table tr td.con1{max-height:120px;}
 .table.form-s-table tr td.con1 .pic1{}
 .table.form-s-table tr td.con1 .pic1 img{width:90px;height:90px;display:block;}
 .table.form-s-table tr td.con1 .text1{max-width:380px;margin:0 15px;}
 .table.form-s-table tr td.con1 .tag1{max-width:100px;}
+.table.form-s-table .w-half{width:16px;height:16px;vertical-align:middle;margin-left:5px;}
 
 .table-popup{width:100%;}
 .table-popup.table-popup-form tr{border-top:1px solid #dfe2e3;}
@@ -129,3 +131,12 @@
 .user-avatar .user-info .name{font-size:18px;font-weight:bold;line-height:22px;color:#fff;}
 .user-avatar .user-info .line{width:60%;height:1px;background:#5eace3;display:block;margin:25px auto;}
 .user-avatar .user-info .info{font-size:14px;line-height:16px;color:#ddd;margin-bottom:12px;}
+.psn-review-more{width:100%;text-align:center;position:absolute;bottom:0;height:36px;line-height:36px;color:#fff;font-size:13px;font-weight:bold;display:block;background:#5eace3;left:0;transition:0.2s;}
+.psn-review-more:hover{background:#1a3ff9;}
+.user-overview-body-line{position:relative;}
+.user-overview-body-line:after{content:'';position:absolute;width:1px;height:80px;background:#e5e3de;top:-8px;right:0;}
+.user-overview-body-line:last-child:after{display:none;}
+
+.charts {width: 100%;}
+.psn-charts-tab a{padding:0 10px;}
+.psn-charts-tab a.active{text-decoration: underline;font-weight: bold;}
