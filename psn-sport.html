@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<!--[if IE]>
+	<script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script>
+	<![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>HTML5 - default</title>
+	<meta name="keywords"  content="this,is,david's,sample,website" />
+	<meta name="description" content="" />
+	<meta name="Author" content="David Kao" />
+	<meta name="Copyright" content="" />
+	<meta property="og:title" content=""/>
+	<meta property="og:site_name" content="test.html"/>
+	<meta property="og:description" content=""/>
+    <meta property="og:image" content="" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+	 <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+    <!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/pages.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/jquery-labelauty.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="js/echarts.js"></script>
+	
+</head>
+
+<body>
+	
+	<!--start header-->
+	<header>
+		<div class="inner clearfix">
+			
+			<div class="left fltlft clearfix">
+				<div class="logo fltlft"><img src="images/common/logo.png" alt="衛生福利部國民健康署" /></div>
+				<div class="line fltlft"></div>
+				<a href="index.html" class="logo2 fltlft" hov="0.7"><img src="images/common/logo-2.png" alt="慢病評估風險系統" /></a>
+			</div>
+			
+			<nav class="right fltrt">
+				
+				<ul class="menu clearfix">
+					
+					<li class="fltlft">
+						<span class="layer-1">慢性疾病風險評估<i class="fa fa-caret-down mg-l-10" aria-hidden="true"></i></span>
+						<div class="dropdown clearfix">
+							<div class="layer-2">
+								<a href="risk-chd.html">心臟病</a>
+								<a href="risk-diabetes.html">糖尿病</a>
+								<a href="risk-hypertension.html">高血壓</a>
+								<a href="risk-ckd.html">腎臟病</a>
+								<a href="risk-stroke.html">中風</a>
+							</div>
+						</div>
+					</li>
+					
+					<li class="fltlft">
+						<span class="layer-1">個人健康管理<i class="fa fa-caret-down mg-l-10" aria-hidden="true"></i></span>
+						<div class="dropdown dropdown2 clearfix">
+						
+							<div class="layer-2 fltlft">
+								<p>個人日常記錄</p>
+								<a href="psn-review.html">個人日常記錄總覽</a>
+								<a href="psn-bpressure.html">血壓記錄</a>
+								<a href="psn-bsugar.html">血糖記錄</a>
+								<a href="psn-body.html">體位記錄</a>
+								<a href="psn-diet.html">飲食記錄</a>
+								<a href="psn-sport.html">運動記錄</a>
+								<a href="psn-sleeping.html">睡眠品質或壓力記錄</a>
+								<a href="psn-med.html">用藥記錄</a>
+							</div>
+							
+							<div class="layer-2 fltlft">
+								<p>健檢報告</p>	
+								<a href="phy-review.html">我的健檢透視圖</a>
+								<a href="phy-static.html">歷年數據比較</a>
+								<a href="phy-history.html">歷次健檢結果</a>
+							</div>
+							
+							<div class="layer-2 fltlft">
+								<p>我的量表</p>	
+								<a href="form-sleeping.html">嗜睡量表</a>
+								<a href="form-smoking.html">尼古丁依賴程度</a>
+							</div>
+							
+						</div>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<!--end header-->
+	
+	<!--breadcrumb-->
+	<div class="bread">
+		
+		<div class="inner clearfix">
+			
+			<div class="left fltlft">
+				<p class="text-13 lh-36 bold color-gray-666">
+					<a href="index.html" class="color-yellow inlineblock" hov="0.75">首頁</a>&nbsp;&nbsp;/&nbsp;&nbsp;個人日常紀錄 - 運動記錄
+				</p>
+			</div>
+			
+			<div class="right fltrt">
+				<span class="login-user mg-r-20"><span class="bold">高毅軒</span>，您好</span>
+				<!--<a href="login.html" class="loginsignup-btn" hov="0.75">登入</a>-->
+				<!--<a href="signup.html" class="loginsignup-btn" hov="0.75">註冊</a>-->
+				<a href="#" class="loginsignup-btn" hov="0.75"><i class="fa fa-user-o mg-r-5 color-gray-666" aria-hidden="true"></i>個管師頁面</a>
+				<a href="#" class="loginsignup-btn" hov="0.75">登出</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	<!--breadcrumb-->
+	
+	<!--start main-->
+	<div class="wrapper">
+		
+		<!--bg-->
+		<div class="main-bg">
+		
+			<!--main inner-->
+			<div class="inner">
+
+				<div class="page-title-sec pd-h-20 mg-b-20">
+					<div><h2 class="page-title"><span><img src="images/page/ico-title-psn.png" alt="運動記錄" /></span>運動記錄</h2></div>
+					<div class="page-title-visual" style="bottom:-22px;"><img src="images/page/psn-title-visual.png" alt="icon" /></div>
+				</div>
+
+				<!--tab sec-->
+				<div class="page-tab-sec clearfix">
+					
+					<!--one tab-->
+					<a href="psn-review.html" class="one-tab fltlft">個人日常記錄總覽</a>
+					<!--one tab-->
+					
+					<!--one tab-->
+					<a href="psn-bpressure.html" class="one-tab fltlft">血壓記錄</a>
+					<!--one tab-->
+					
+					<!--one tab-->
+					<a href="psn-bsugar.html" class="one-tab fltlft">血糖記錄</a>
+					<!--one tab-->
+					
+					<!--one tab-->
+					<a href="psn-body.html" class="one-tab fltlft">體位記錄</a>
+					<!--one tab-->
+					
+					<!--one tab-->
+					<a href="psn-diet.html" class="one-tab fltlft">飲食記錄</a>
+					<!--one tab-->
+					
+					<!--one tab-->
+					<a href="psn-sport.html" class="one-tab fltlft active">運動記錄</a>
+					<!--one tab-->
+					
+					<!--one tab-->
+					<a href="psn-sleeping.html" class="one-tab fltlft">睡眠品質或壓力記錄</a>
+					<!--one tab-->
+					
+					
+				</div>
+				<!--tab sec-->
+
+				<div class="mg-h-20">
+
+					<div class="bg-white bg-sha mg-b-40 grid100">
+						<div class="user-sec-inner pd-20 relative">
+						
+							<div class="mg-l-5 mg-t-5 mg-b-20">
+								<h3 class="inlineblock text-16 bold color-gray-333 lh-30">運動消耗熱量折線圖</h3>
+								<div class="psn-charts-tab inlineblock mg-l-30">
+									<span class="text-13  color-gray-333 lh-30">最近：</span>
+									<a href="#" class="text-13  color-gray-333 lh-30 active" hov="0.7">一個月</a>
+									<a href="#" class="text-13  color-gray-333 lh-30" hov="0.7">三個月</a>
+									<a href="#" class="text-13  color-gray-333 lh-30" hov="0.7">半年</a>
+									<a href="#" class="text-13  color-gray-333 lh-30" hov="0.7">一年</a>
+								</div>
+								
+							</div>
+						
+							<!-- 運動記錄 -->
+							<div id="sport" class="block">
+								<div id="sport_charts" class="charts" style="height:300px;"></div>
+
+							</div>
+							<!-- 運動記錄 -->
+							
+							<!-- 運動記錄 js-->
+							<script>
+								var sport_charts = echarts.init(document.getElementById('sport_charts'));
+
+								var option = {
+									
+									textStyle:{
+										fontSize:13,
+										fontWeight:'bold'
+									},
+									tooltip: {},
+										legend: {
+											data:['運動消耗熱量（大卡）']
+										},
+
+									xAxis: {
+										// type: 'category',
+										// name: '日期',
+										// splitLine: {show: false},
+										data: ['2017-01-01', '2017-02-01'],
+									},
+									yAxis: {},
+									color:['#121281','#1aafa6','#1a3ff9','#5eace3'],
+									series: [
+										{
+											name: '運動消耗熱量（大卡）',
+											type: 'line',
+											data: [800, 80]
+										}
+									]
+								};
+								sport_charts.setOption(option);
+
+
+
+							</script>
+							<!-- 運動記錄 js-->
+							
+						</div>
+					</div>
+					
+						
+					<div class="tright mg-b-30"><a href="#trpop-1" class="btn btn-m btn-lb inlineblock open-popup-link" hov="0.8">新增量表<i class="fa fa-plus mg-l-10" aria-hidden="true"></i></a></div>
+
+					<!--新增量表  Popup itself -->
+					<div id="trpop-1" class="white-popup mfp-hide popup-wide">
+
+						<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">新增日常運動記錄</h3>
+
+						<div>
+							<table class="table-popup table-popup-form">
+
+								<tr>
+									<th colspan="2" class="tleft text-13 color-gray-333 lh-16 bold"><span class="color-red">＊</span>為必填項目</th>
+								</tr>
+
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>量測日期</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" class="datepicker" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>餐別</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<input type="radio" id="diet-1" name="diet-type" /><label for="diet-1" class="mg-r-10">早上</label>
+										<input type="radio" id="diet-2" name="diet-type" /><label for="diet-2" class="mg-r-10">中午</label>
+										<input type="radio" id="diet-3" name="diet-type" /><label for="diet-3" class="mg-r-10">下午</label>
+										<input type="radio" id="diet-4" name="diet-type" /><label for="diet-4" class="mg-r-10">晚上</label>
+										<input type="radio" id="diet-5" name="diet-type" /><label for="diet-5" class="mg-r-10">半夜</label>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動大分類</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<select class="nice-sel-wrap">
+											<option data-display="運動大分類">選擇分類</option>
+											<option value="011">吧拉吧拉吧拉 115533</option>
+											<option value="012">吧拉吧拉 115533</option>
+											<option value="013">吧拉吧拉吧拉 115533</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>運動項目代碼</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<select class="nice-sel-wrap">
+											<option data-display="運動項目代碼">選擇運動</option>
+											<option value="031">吧拉吧拉吧拉 115533</option>
+											<option value="032">吧拉吧拉 115533</option>
+											<option value="033">吧拉吧拉吧拉 115533</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動名稱</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>運動時數（分）</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="需為正整數" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動消耗熱量（大卡）</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="自行輸入或系統自動計算" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動相片</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										 <input type="file" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">註記或說明</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><textarea type="text"></textarea></td>
+								</tr>
+
+
+						  </table>
+
+
+						  <div class="mg-t-30 tright">
+							  <button class="btn btn-m btn-lb inlineblock open-popup-link" hov="0.8">新增<i class="fa fa-plus mg-l-10" aria-hidden="true"></i></button>
+						  </div>
+
+						</div>
+					</div>
+					<!--新增量表  Popup itself -->
+						
+					<table class="table form-s-table bg-sha">
+
+						<tr>
+							<th>編號</th>
+							<th>量測時間</th>
+							<th>運動時段</th>
+							<th>運動項目代碼</th>
+							<th>運動名稱</th>
+							<th>運動時數（分）</th>
+							<th>運動消耗熱量（大卡）</th>
+							<th>運動相片</th>
+							<th>註記或說明</th>
+							<th>建檔日</th>
+							<th></th>
+							<th></th>
+						</tr>
+
+						<tr>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">1</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">晚上</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">1234567</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">健行（和緩）</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">30</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">100</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10 psn-table-pic"><a href="images/tmp/dev2.health200-1.jpg" hov="0.75"><img src="images/tmp/dev2.health200-1.jpg" class="v-centerimg" alt="asdasd" /></a></td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">123123</td>
+							<td class="vmiddle text-14 lh-24 color-gray-666 tcenter pd-v-10">2017-10-08 07:19</td>
+							<td class="tcenter min20"><a href="#fs-table-1" class="open-popup-link btn btn-s btn-db btn-noshad inlineblock" hov="0.8">查看</a></td>
+							<td class="tcenter min20 pd-v-10"><button class="btn btn-s btn-black btn-noshad inlineblock" hov="0.8">刪除</button></td>
+						</tr>
+
+					</table>
+					
+					
+
+
+					<!--量表內容 Popup itself  -->
+					<div id="fs-table-1" class="white-popup mfp-hide popup-wide">
+
+						<h3 class="text-24 lh-40 color-gray-333 bold mg-b-20">日常運動記錄</h3>
+
+						<div>
+							<table class="table-popup table-popup-form">
+
+								<tr>
+									<th colspan="2" class="tleft text-13 color-gray-333 lh-16 bold"><span class="color-red">＊</span>為必填項目</th>
+								</tr>
+
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>量測日期</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" class="datepicker" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>餐別</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<input type="radio" id="diet-1" name="diet-type" /><label for="diet-1" class="mg-r-10">早上</label>
+										<input type="radio" id="diet-2" name="diet-type" /><label for="diet-2" class="mg-r-10">中午</label>
+										<input type="radio" id="diet-3" name="diet-type" /><label for="diet-3" class="mg-r-10">下午</label>
+										<input type="radio" id="diet-4" name="diet-type" /><label for="diet-4" class="mg-r-10">晚上</label>
+										<input type="radio" id="diet-5" name="diet-type" /><label for="diet-5" class="mg-r-10">半夜</label>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動大分類</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<select class="nice-sel-wrap">
+											<option data-display="運動大分類">選擇分類</option>
+											<option value="011">吧拉吧拉吧拉 115533</option>
+											<option value="012">吧拉吧拉 115533</option>
+											<option value="013">吧拉吧拉吧拉 115533</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>運動項目代碼</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										<select class="nice-sel-wrap">
+											<option data-display="運動項目代碼">選擇運動</option>
+											<option value="031">吧拉吧拉吧拉 115533</option>
+											<option value="032">吧拉吧拉 115533</option>
+											<option value="033">吧拉吧拉吧拉 115533</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動名稱</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><span class="color-red">＊</span>運動時數（分）</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="需為正整數" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動消耗熱量（大卡）</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><input type="text" placeholder="自行輸入或系統自動計算" /></td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">運動相片</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">
+										 <input type="text" placeholder="" value="2ff6dc3a61c474caa59784bcb1c2b11.jpg" readonly />
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft">註記或說明</td>
+									<td class="text-13 color-gray-333 lh-20 bold fs1 tleft"><textarea type="text"></textarea></td>
+								</tr>
+
+
+						  </table>
+
+
+						  <div class="mg-t-30 tright">
+							  <button class="btn btn-m btn-lb inlineblock open-popup-link" hov="0.8">更新<i class="fa fa-plus mg-l-10" aria-hidden="true"></i></button>
+						  </div>
+
+						</div>
+					</div>
+					<!--量表內容 Popup itself -->
+					
+					<!--pages-->
+					<div class="pages mg-v-30 tright">
+						<a href="#" class="inlineblock text-13 color-gray-333">上一頁</a>
+						<a href="#" class="inlineblock text-13 color-gray-333 active">1</a>
+						<a href="#" class="inlineblock text-13 color-gray-333">下一頁</a>
+					</div>
+					<!--pages-->
+
+				</div>
+
+			</div>	
+			<!--main inner-->
+		
+		</div>
+		<!--bg-->
+		
+		
+		
+	</div>
+	<!--end main-->
+	
+	<!--start footer-->
+	<footer>
+		
+		<div class="inner">
+			<div class="clearfix">
+				<p class="copyright fltlft text-13 lh-24 color-gray-999 mg-t-37">國民健康署 © 版權所有，請勿任意轉載作商業用途</p>
+				<div class="clearfix fltlft mg-t-37 mg-l-100">
+					<a href="#" class="color-yellow text-14 lh-24 bold footer-link" hov="0.75">連結連結</a>
+					<a href="#" class="color-yellow text-14 lh-24 bold footer-link" hov="0.75">連結連結</a>
+					<a href="#" class="color-yellow text-14 lh-24 bold footer-link" hov="0.75">連結連結</a>
+					<a href="#" class="color-yellow text-14 lh-24 bold footer-link" hov="0.75">連結連結</a>
+				</div>
+				
+				<a href="#" class="fltrt inlineblock mg-t-30" hov="0.75"><img src="images/common/blabla_03.jpg" alt="無障礙標章測試" /></a>
+			</div>
+		</div>
+		
+	</footer>
+	<!--end footer-->
+
+
+<!-- Javascript
+================================================== -->
+<!-- Get Google CDN's jQuery and jQuery UI with fallback to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.js"></script>
+<script src="js/jquery.blImageCenter.js"></script>
+<script src="js/jquery-labelauty.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.nice-select.js"></script>
+<script src="js/tooltipsy.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+
+$('.hastip').tooltipsy();
+$( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+	
+$('.m-close').on( "click", function() {
+  $.magnificPopup.close();	
+});
+
+$('.psn-table-pic a').magnificPopup({
+  type: 'image'
+  // other options
+});
+	
+	
+</script>
+
+</body>
+</html>
